@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AirShoppingRS xmlns="http://www.iata.org/IATA/EDIST/2017.2" Version="21.3">
+  <Document>
+    <Name>Qantas NDC AirShopping Response</Name>
+    <ReferenceVersion>1.0</ReferenceVersion>
+  </Document>
+  <Success/>
+  <ShoppingResponseIDs>
+    <ResponseID>QF-SHOP-20260520-001</ResponseID>
+  </ShoppingResponseIDs>
+  <OffersGroup>
+    <AirlineOffers>
+      <AirlineOfferSnapshot>
+        <PassengerQuantity>1</PassengerQuantity>
+        <Highest>
+          <TotalAmount>
+            <SimpleCurrencyPrice Code="AUD">1250.00</SimpleCurrencyPrice>
+          </TotalAmount>
+        </Highest>
+        <Lowest>
+          <TotalAmount>
+            <SimpleCurrencyPrice Code="AUD">850.00</SimpleCurrencyPrice>
+          </TotalAmount>
+        </Lowest>
+      </AirlineOfferSnapshot>
+
+      <Offer OfferID="QF_OFFER_001" Owner="QF">
+        <OfferExpirationDateTime>2026-05-15T23:59:00Z</OfferExpirationDateTime>
+        <TotalPrice>
+          <TotalAmount>
+            <SimpleCurrencyPrice Code="AUD">850.00</SimpleCurrencyPrice>
+          </TotalAmount>
+          <BaseAmount Code="AUD">720.00</BaseAmount>
+          <Taxes>
+            <Total Code="AUD">130.00</Total>
+          </Taxes>
+        </TotalPrice>
+        <OfferItems>
+          <OfferItem OfferItemID="QF_ITEM_001">
+            <TotalPriceDetail>
+              <TotalAmount>
+                <SimpleCurrencyPrice Code="AUD">850.00</SimpleCurrencyPrice>
+              </TotalAmount>
+            </TotalPriceDetail>
+            <Service>
+              <FlightRefs>
+                <FlightRef FlightRefKey="QF_FLIGHT_001"/>
+              </FlightRefs>
+            </Service>
+            <FareDetail>
+              <FareBasis>
+                <FareBasisCode>YECOSYD</FareBasisCode>
+              </FareBasis>
+              <FareComponent>
+                <FareComponentID>FC_001</FareComponentID>
+                <CabinType>
+                  <CabinTypeCode>Y</CabinTypeCode>
+                  <CabinTypeName>ECONOMY</CabinTypeName>
+                </CabinType>
+              </FareComponent>
+            </FareDetail>
+          </OfferItem>
+        </OfferItems>
+      </Offer>
+
+      <Offer OfferID="QF_OFFER_002" Owner="QF">
+        <OfferExpirationDateTime>2026-05-15T23:59:00Z</OfferExpirationDateTime>
+        <TotalPrice>
+          <TotalAmount>
+            <SimpleCurrencyPrice Code="AUD">1250.00</SimpleCurrencyPrice>
+          </TotalAmount>
+          <BaseAmount Code="AUD">1080.00</BaseAmount>
+          <Taxes>
+            <Total Code="AUD">170.00</Total>
+          </Taxes>
+        </TotalPrice>
+        <OfferItems>
+          <OfferItem OfferItemID="QF_ITEM_002">
+            <TotalPriceDetail>
+              <TotalAmount>
+                <SimpleCurrencyPrice Code="AUD">1250.00</SimpleCurrencyPrice>
+              </TotalAmount>
+            </TotalPriceDetail>
+            <Service>
+              <FlightRefs>
+                <FlightRef FlightRefKey="QF_FLIGHT_002"/>
+              </FlightRefs>
+            </Service>
+            <FareDetail>
+              <FareBasis>
+                <FareBasisCode>CBUSYD</FareBasisCode>
+              </FareBasis>
+              <FareComponent>
+                <FareComponentID>FC_002</FareComponentID>
+                <CabinType>
+                  <CabinTypeCode>C</CabinTypeCode>
+                  <CabinTypeName>BUSINESS</CabinTypeName>
+                </CabinType>
+              </FareComponent>
+            </FareDetail>
+          </OfferItem>
+        </OfferItems>
+      </Offer>
+    </AirlineOffers>
+  </OffersGroup>
+
+  <DataLists>
+    <FlightList>
+      <Flight FlightKey="QF_FLIGHT_001">
+        <Journey>
+          <Time>PT14H20M</Time>
+        </Journey>
+        <Segment SegmentKey="QF_SEG_001">
+          <Departure>
+            <AirportCode>DXB</AirportCode>
+            <Date>2026-05-20</Date>
+            <Time>23:55</Time>
+          </Departure>
+          <Arrival>
+            <AirportCode>SYD</AirportCode>
+            <Date>2026-05-22</Date>
+            <Time>06:15</Time>
+          </Arrival>
+          <MarketingCarrier>
+            <AirlineID>QF</AirlineID>
+            <FlightNumber>8</FlightNumber>
+          </MarketingCarrier>
+          <OperatingCarrier>
+            <AirlineID>QF</AirlineID>
+            <FlightNumber>8</FlightNumber>
+          </OperatingCarrier>
+          <Equipment>
+            <AircraftCode>388</AircraftCode>
+          </Equipment>
+          <ClassOfService>
+            <Code>Y</Code>
+          </ClassOfService>
+        </Segment>
+      </Flight>
+      <Flight FlightKey="QF_FLIGHT_002">
+        <Journey>
+          <Time>PT14H20M</Time>
+        </Journey>
+        <Segment SegmentKey="QF_SEG_002">
+          <Departure>
+            <AirportCode>DXB</AirportCode>
+            <Date>2026-05-20</Date>
+            <Time>23:55</Time>
+          </Departure>
+          <Arrival>
+            <AirportCode>SYD</AirportCode>
+            <Date>2026-05-22</Date>
+            <Time>06:15</Time>
+          </Arrival>
+          <MarketingCarrier>
+            <AirlineID>QF</AirlineID>
+            <FlightNumber>8</FlightNumber>
+          </MarketingCarrier>
+          <OperatingCarrier>
+            <AirlineID>QF</AirlineID>
+            <FlightNumber>8</FlightNumber>
+          </OperatingCarrier>
+          <Equipment>
+            <AircraftCode>388</AircraftCode>
+          </Equipment>
+          <ClassOfService>
+            <Code>C</Code>
+          </ClassOfService>
+        </Segment>
+      </Flight>
+    </FlightList>
+  </DataLists>
+</AirShoppingRS>
